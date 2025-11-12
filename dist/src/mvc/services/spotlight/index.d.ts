@@ -1,0 +1,26 @@
+import {
+    getInstagramPostsByTagName,
+    getPostsByLocation,
+    getPostById,
+    createComment,
+    getComments,
+    toggleLike,
+    getPostsByUserId,
+    createSpotlightPost,
+    createEmploymentVerificationPost,
+    updateSpotlightPost,
+    deleteCommentService,
+} from './spotlight.service';
+export {
+    getInstagramPostsByTagName,
+    getPostsByLocation,
+    getPostById,
+    createComment,
+    getComments,
+    toggleLike,
+    getPostsByUserId,
+    createSpotlightPost,
+    createEmploymentVerificationPost,
+    updateSpotlightPost,
+    deleteCommentService,
+};
