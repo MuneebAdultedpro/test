@@ -21,12 +21,6 @@ app.get("/test", async (req, res) => {
 app.disable("x-powered-by"); // hides 'X-Powered-By: Express' header
 app.set("trust proxy", "loopback"); //Forward user/client ip to log it on backend
 
-const cors = require("cors");
-const corsOptions = {
-  origin: "*",
-};
-app.use(cors(corsOptions));
-
 app.use((req, res, next) => {
   // @ts-ignore
   if (req?.useragent && req?.useragent?.isBot) {
